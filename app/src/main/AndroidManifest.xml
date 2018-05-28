@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pangpang.newsissue"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_news_red"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Extheme" android:logo="@drawable/logo">
+        <activity
+            android:name="com.pangpang.newsissue.MainActivity"
+            android:logo="@drawable/logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".paper.KyunghyangMainActivity" android:label="@string/Kyunghyang" android:logo="@drawable/logo"></activity>
+        <activity
+            android:name=".paper.DongAMainActivity"
+            android:label="@string/donga" >
+        </activity>
+        <activity android:label="@string/kukinews" android:name=".paper.KukinewsMainActivity"></activity>
+        <activity android:label="@string/nocutnews" android:name=".paper.NocutMainActivity"></activity>
+        <activity android:name=".paper.MKMainActivity" android:label="@string/mk"></activity>
+        <activity android:label="@string/segye" android:name=".paper.SegyeMainActivity"></activity>
+        <activity android:label="@string/inews" android:name=".paper.INewsMainActivity"></activity>
+        <activity android:label="@string/ohmynews" android:name=".paper.OhMyNewsMainActivity"></activity>
+        <activity android:label="@string/edaily" android:name=".paper.EdailyMainActivity"></activity>
+        <activity android:label="@string/etnews" android:name=".paper.ETNewsMainActivity"></activity>
+        <activity android:label="@string/chosun" android:name=".paper.ChosunMainActivity"></activity>
+        <activity android:label="@string/sbs" android:name=".paper.SBSMainActivity"></activity>
+        <activity android:label="@string/mbn" android:name=".paper.MBNMainActivity"></activity>
+        <activity android:label="@string/imbc" android:name=".paper.MBCMainActivity"></activity>
+        <activity android:label="@string/heraldm" android:name=".paper.HeraldMainActivity"></activity>
+        <activity android:label="@string/hankooki" android:name=".paper.HankookMainActivity"></activity>
+        <activity android:label="@string/hani" android:name=".paper.HankyorehMainActivity"></activity>
+        <activity android:label="@string/fnnews" android:name=".paper.FNNewsMainActivity"></activity>
+        <activity android:label="@string/joins" android:name=".paper.ChungangMainActivity"></activity>
+        <activity android:logo="@drawable/logo" android:name=".news.NewsIn"></activity>
+    </application>
+
+</manifest>
